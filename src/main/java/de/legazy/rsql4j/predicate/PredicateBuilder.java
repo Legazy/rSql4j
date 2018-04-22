@@ -4,6 +4,10 @@ import java.util.Collection;
 
 public class PredicateBuilder {
 
+	public <T> Predicate<T> isFalse() {
+		return new IsFalsePredicate<T>();
+	}
+
 	public <T> Predicate<T> equal(T object, Object argument) {
 		return new EqualsPredicate<T>().where(object).setArgument(argument);
 	}

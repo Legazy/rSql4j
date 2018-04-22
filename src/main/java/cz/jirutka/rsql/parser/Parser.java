@@ -18,13 +18,13 @@ final class Parser implements ParserConstants {
     }
 
     private String unescape(String s) {
-        if (s.indexOf('\u005c\u005c') < 0) {
+        if (s.indexOf('\\') < 0) {
             return s;
         }
         final StringBuilder sb = new StringBuilder(s.length());
 
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '\u005c\u005c') {
+            if (s.charAt(i) == '\\') {
                 i++;
             }
             if (i < s.length()) {

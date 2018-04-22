@@ -9,6 +9,8 @@ public enum RSQLSearchOperation {
 
 	EQUAL(RSQLOperators.EQUAL),
 	NOT_EQUAL(RSQLOperators.NOT_EQUAL),
+	LIKE(RSQLOperators.LIKE),
+	NOT_LIKE(RSQLOperators.NOT_LIKE),
 	LESS_THAN(RSQLOperators.LESS_THAN),
 	LESS_OR_EQUAL(RSQLOperators.LESS_THAN_OR_EQUAL),
 	GREATER_THAN(RSQLOperators.GREATER_THAN),
